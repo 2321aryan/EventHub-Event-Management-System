@@ -75,10 +75,8 @@ eventhub/
 - **Database:** MySQL
 - **Design:** Responsive CSS Grid/Flexbox, CSS Gradients, Animations
 
-## Contact Information
 
-- 📧 Email: eventhub@04.com
-- 📞 Phone: +91 6354840438, 8160997933
 
 ---
+
 © 2025 EventHub | Designed for Memorable Moments 💖
