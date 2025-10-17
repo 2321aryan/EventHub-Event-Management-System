@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Demo User",
+        "email": "demo@eventhub.com",
+        "password": "$2y$10$DSAuXpqj0INlQ6Y..Lp4.O9lIN3Zk8HYdBmimlNJsO\/a9pQqfEKLm"
+    },
+    {
+        "id": 2,
+        "name": "Parekh Aryan",
+        "email": "parekharyan4877@gmail.com",
+        "password": "$2y$10$XTYdkKWn4FSmpslpqpISTelaiMtEq4kdt5fxfxPvczE5XpgldrEE2"
+    },
+    {
+        "id": 3,
+        "name": "viswa",
+        "email": "viswa@gmail.com",
+        "password": "$2y$10$z4YvioO4TKgP1CFsmYCrQ.H\/FHyRK\/.LH1SVt3yfJynoW.Lc4D9E."
+    }
+]

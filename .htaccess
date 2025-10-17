@@ -1,0 +1,11 @@
+# Enable PHP processing
+AddType application/x-httpd-php .php
+
+# Set PHP configuration
+php_flag display_errors On
+php_value error_reporting "E_ALL"
+
+# Ensure PHP files are processed
+<Files "*.php">
+    SetHandler application/x-httpd-php
+</Files>

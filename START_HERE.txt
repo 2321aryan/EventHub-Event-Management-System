@@ -1,0 +1,73 @@
+===============================================
+🎉 EventHub - Event Management System
+===============================================
+
+👋 WELCOME! You've received a complete event management application.
+
+🚀 QUICK START (2 minutes):
+===============================================
+
+1. 📂 EXTRACT THIS ZIP FILE
+   - Extract to any folder (Desktop, Documents, etc.)
+   - Make sure all files are extracted
+
+2. 🔧 RUN THE SETUP
+   - Double-click: SETUP_OLD_LAPTOP.bat
+   - Follow the simple prompts
+   - The script does everything automatically!
+
+3. 🌐 USE THE APPLICATION
+   - Browser will open automatically
+   - Login with: demo@eventhub.com / password
+   - Start managing events!
+
+===============================================
+📋 WHAT'S INCLUDED:
+===============================================
+
+✅ Complete event management system
+✅ User registration and login
+✅ Event booking and management
+✅ Admin dashboard
+✅ Responsive design (works on any screen)
+✅ Demo data and accounts
+✅ Automatic setup scripts
+✅ Works offline (no internet needed after setup)
+
+===============================================
+🔧 REQUIREMENTS:
+===============================================
+
+✅ Windows laptop/PC (any version)
+✅ XAMPP (free - script will help you install)
+✅ 5 minutes of your time
+✅ No technical knowledge required!
+
+===============================================
+🎯 DEMO ACCOUNT:
+===============================================
+
+Email: demo@eventhub.com
+Password: password
+
+===============================================
+📞 NEED HELP?
+===============================================
+
+If something doesn't work:
+
+1. 🔧 Run: TROUBLESHOOT_LAPTOP.bat
+2. 📄 Open: offline_test.html (works without server)
+3. 📖 Read: LAPTOP_SETUP_GUIDE.txt
+
+===============================================
+🚀 GET STARTED NOW:
+===============================================
+
+Double-click: SETUP_OLD_LAPTOP.bat
+
+That's it! The script will guide you through everything.
+
+===============================================
+© 2025 EventHub | Professional Event Management
+===============================================

@@ -1,0 +1,98 @@
+===============================================
+🔧 EventHub - Old Laptop Setup Guide
+===============================================
+
+❌ PROBLEM: "localhost refused to connect"
+✅ SOLUTION: Apache web server is not running
+
+📋 STEP-BY-STEP FIX:
+===============================================
+
+STEP 1: Install XAMPP (if not installed)
+----------------------------------------
+□ Download XAMPP from: https://www.apachefriends.org/
+□ Install to default location: C:\xampp\
+□ No special settings needed
+
+STEP 2: Copy EventHub Files
+---------------------------
+□ Extract the EventHub zip file
+□ Copy the "eventhub" folder to: C:\xampp\htdocs\
+□ Final path should be: C:\xampp\htdocs\eventhub\
+
+STEP 3: Start XAMPP Services
+----------------------------
+□ Open XAMPP Control Panel (from Start Menu or Desktop)
+□ Click "Start" button next to "Apache"
+□ Click "Start" button next to "MySQL"
+□ Both should show GREEN "Running" status
+
+STEP 4: Test the Application
+---------------------------
+□ Open browser
+□ Go to: http://localhost/eventhub/quick_test.html
+□ If that works, try: http://localhost/eventhub/login.php
+
+🚨 QUICK AUTOMATED FIX:
+===============================================
+□ Run: TROUBLESHOOT_LAPTOP.bat
+□ This will automatically:
+  - Check XAMPP installation
+  - Copy files to correct location
+  - Start XAMPP Control Panel
+  - Open the application
+
+🔧 COMMON ISSUES & SOLUTIONS:
+===============================================
+
+❌ "XAMPP not found"
+✅ Install XAMPP to C:\xampp\
+
+❌ "Apache won't start"
+✅ Check if another program is using port 80
+✅ Try stopping IIS or Skype
+✅ Restart computer and try again
+
+❌ "MySQL won't start"
+✅ Check if another MySQL service is running
+✅ Stop other MySQL services
+✅ Restart XAMPP
+
+❌ "Still can't connect"
+✅ Try: http://127.0.0.1/eventhub/
+✅ Try: http://localhost:8080/eventhub/
+✅ Check Windows Firewall settings
+✅ Disable antivirus temporarily
+
+🎯 DEMO ACCOUNT:
+===============================================
+Email: demo@eventhub.com
+Password: password
+
+📞 EMERGENCY BACKUP PLAN:
+===============================================
+If XAMPP won't work on old laptop:
+□ Use WAMP instead: http://www.wampserver.com/
+□ Or use portable server like UniServerZ
+□ Files will work with any PHP server
+
+💡 LAPTOP-SPECIFIC TIPS:
+===============================================
+□ Old laptops may need Windows updates
+□ Disable Windows Defender real-time protection temporarily
+□ Close other programs to free up memory
+□ Use Task Manager to check if Apache.exe is running
+
+🚀 SUCCESS CHECKLIST:
+===============================================
+□ XAMPP installed
+□ Apache service running (green)
+□ MySQL service running (green)
+□ Files in C:\xampp\htdocs\eventhub\
+□ Browser opens http://localhost/eventhub/
+□ Login page loads
+□ Demo account works
+
+===============================================
+Need help? Run TROUBLESHOOT_LAPTOP.bat
+===============================================

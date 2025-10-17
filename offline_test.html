@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub - Offline Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .status {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 5px solid;
+        }
+        .success { background: rgba(40, 167, 69, 0.3); border-color: #28a745; }
+        .warning { background: rgba(255, 193, 7, 0.3); border-color: #ffc107; }
+        .error { background: rgba(220, 53, 69, 0.3); border-color: #dc3545; }
+        .info { background: rgba(23, 162, 184, 0.3); border-color: #17a2b8; }
+        
+        .step {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .button {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+            margin: 5px;
+            transition: all 0.3s;
+        }
+        .button:hover {
+            background: rgba(255,255,255,0.3);
+            border-color: white;
+        }
+        
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 EventHub - Offline Test Page</h1>
+        
+        <div class="status success">
+            ✅ <strong>This page is working!</strong><br>
+            You can open HTML files directly from the file system.
+        </div>
+        
+        <div class="status error">
+            ❌ <strong>Server Issue Detected</strong><br>
+            The "localhost refused to connect" error means Apache web server is not running.
+        </div>
+        
+        <h2>🔧 Quick Fix Steps</h2>
+        
+        <div class="step">
+            <h3>Step 1: Check XAMPP Installation</h3>
+            <p>Look for XAMPP Control Panel in:</p>
+            <ul>
+                <li>Desktop shortcut</li>
+                <li>Start Menu → XAMPP</li>
+                <li>File: <code>C:\xampp\xampp-control.exe</code></li>
+            </ul>
+            <p><strong>If not found:</strong> Download and install XAMPP from <a href="https://www.apachefriends.org/" target="_blank" style="color: #ffc107;">apachefriends.org</a></p>
+        </div>
+        
+        <div class="step">
+            <h3>Step 2: Start Apache Service</h3>
+            <p>In XAMPP Control Panel:</p>
+            <ol>
+                <li>Click <strong>"Start"</strong> next to Apache</li>
+                <li>Click <strong>"Start"</strong> next to MySQL</li>
+                <li>Both should show <span style="color: #28a745;">GREEN "Running"</span> status</li>
+            </ol>
+        </div>
+        
+        <div class="step">
+            <h3>Step 3: Copy EventHub Files</h3>
+            <p>Ensure EventHub folder is in the correct location:</p>
+            <p><code>C:\xampp\htdocs\eventhub\</code></p>
+            <p>The folder should contain files like: login.php, index.html, style.css</p>
+        </div>
+        
+        <div class="step">
+            <h3>Step 4: Test the Application</h3>
+            <p>Once Apache is running, try these URLs:</p>
+            <ul>
+                <li><code>http://localhost/eventhub/</code></li>
+                <li><code>http://localhost:8080/eventhub/</code></li>
+                <li><code>http://127.0.0.1/eventhub/</code></li>
+            </ul>
+        </div>
+        
+        <h2>🚀 Automated Solutions</h2>
+        
+        <div class="info">
+            <p><strong>Run these files from the EventHub folder:</strong></p>
+            <a href="#" class="button" onclick="alert('Double-click TROUBLESHOOT_LAPTOP.bat in the EventHub folder')">
+                🔧 TROUBLESHOOT_LAPTOP.bat
+            </a>
+            <a href="#" class="button" onclick="alert('Double-click install.bat in the EventHub folder')">
+                📦 install.bat
+            </a>
+        </div>
+        
+        <h2>🎯 Demo Account</h2>
+        <div class="status info">
+            <strong>Email:</strong> demo@eventhub.com<br>
+            <strong>Password:</strong> password
+        </div>
+        
+        <h2>🔍 System Check</h2>
+        <div id="systemCheck">
+            <p>Checking your system...</p>
+        </div>
+        
+        <h2>📞 Still Need Help?</h2>
+        <div class="warning">
+            <p><strong>Common Issues on Old Laptops:</strong></p>
+            <ul>
+                <li>Windows Firewall blocking Apache</li>
+                <li>Antivirus software interfering</li>
+                <li>Port 80 used by another program</li>
+                <li>Insufficient memory/resources</li>
+            </ul>
+            <p><strong>Try:</strong> Restart the laptop and run XAMPP as Administrator</p>
+        </div>
+    </div>
+    
+    <script>
+        // Simple system check
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkDiv = document.getElementById('systemCheck');
+            let checks = [];
+            
+            // Check current protocol
+            if (window.location.protocol === 'file:') {
+                checks.push('✅ Opening from file system (this page works)');
+                checks.push('❌ Need web server for PHP files');
+            } else {
+                checks.push('✅ Web server is working!');
+            }
+            
+            // Check user agent for OS info
+            const ua = navigator.userAgent;
+            if (ua.includes('Windows')) {
+                checks.push('✅ Windows detected - XAMPP compatible');
+            }
+            
+            // Display current URL
+            checks.push('📍 Current location: ' + window.location.href);
+            
+            checkDiv.innerHTML = checks.map(check => '<p>' + check + '</p>').join('');
+        });
+        
+        // Add some helpful functions
+        function openXAMPP() {
+            alert('Please open XAMPP Control Panel manually from Start Menu or Desktop');
+        }
+        
+        function testConnection() {
+            const urls = [
+                'http://localhost/eventhub/',
+                'http://localhost:8080/eventhub/',
+                'http://127.0.0.1/eventhub/'
+            ];
+            
+            urls.forEach(url => {
+                window.open(url, '_blank');
+            });
+        }
+    </script>
+</body>
+</html>
